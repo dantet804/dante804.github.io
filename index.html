@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio | Management & Operations</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    /* Projects Cards */
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Professor's Gemini Section (if an interactive element is needed) */
+    #gemini-container {
+      background-color: var(--card-bg);
+      border: 1px dashed var(--accent);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 2rem;
+      display: none; /* remove display:none once professor's code renders here */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Section 1: Personal Statement -->
+    <header>
+      <h1>Portfolio</h1>
+      <p class="lead">
+        Detail-oriented Business Management and Supply Chain professional with proven leadership in event logistics, multi-tiered operations, and capacity planning.
+      </p>
+    </header>
+
+    <!-- Section 2: Skills -->
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Operations Management</span>
+        <span class="skill-tag">Logistics & Supply Chain</span>
+        <span class="skill-tag">Event Coordination & Venue Layouts</span>
+        <span class="skill-tag">Cross-Functional Team Leadership</span>
+        <span class="skill-tag">Microsoft Excel (Pivot Tables, XLOOKUP)</span>
+        <span class="skill-tag">Airtable & EMS</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Bilingual (English & Spanish)</span>
+      </div>
+    </section>
+
+    <!-- Section 3: Projects -->
+    <section>
+      <h2>Projects</h2>
+      
+      <div class="project-card">
+        <h3>Campus Operations & Event Capacity Management</h3>
+        <p>Directed end-to-end logistics and layout scheduling for large-scale university events of 400+ attendees. Supervised operational workflows and scaled staffing coverage to maintain seamless turnaround times.</p>
+        <div class="project-links">
+          <a href="#">Overview & Layout Docs &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Commercial Project Management Simulation</h3>
+        <p>Structured end-to-end scope delivery, risk mitigation timelines, and resource budgeting through the CBRE Project Management simulation, analyzing operational bottlenecks to meet stakeholder deadlines.</p>
+        <div class="project-links">
+          <a href="#">View Case Summary &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Operations Workflow & Facility Tracking System</h3>
+        <p>Implemented automated schedule and space utilization tracking using Airtable and EMS to eliminate double-booking and streamline communication across facility teams.</p>
+        <div class="project-links">
+          <a href="#">Workflow Architecture &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gemini / LLM Integration Target -->
+    <div id="gemini-container">
+      <h3>Interactive Assistant</h3>
+      <div id="gemini-output"></div>
+    </div>
+
+  </div>
+
+  <!-- PASTE PROFESSOR'S GEMINI JAVASCRIPT SNIPPET BELOW -->
+  <script>
+    // Paste any JS code your professor handed you right here.
+  </script>
+</body>
+</html>
